@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h4>Navigation Bar</h4>
+    <nav class="navbar">
+        <div id="logo">
+            <h4>WELCOME</h4>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Certificates</a></li>
@@ -29,23 +30,31 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div class="banner" id="sec">
-        <div class="content">
-            <h2>HELLO WORLD,<br>I'm <span>Devansh Bindlish</span></h2>
-            <p>I'm a 3rd year undergraduade student at USICT, GGSIPU</p>
-            <a href="#">Know More</a>
+    <div class="row no-gutters banner">
+        <div class="col-md-7">
+            <div class="content">
+                <h2><span>HELLO WORLD,</span><br>I'm <label>Devansh Bindlish</label></h1>
+                <p>I'm a third year undergraduate student currently pursuing IT, B-TECH from USICT, GGSIPU.
+                    I am a full stack web developer and currently working on deep learning.
+                </p>
+                <a href="about.html" class="know-more">Know More</a>
+            </div>
         </div>
-        <img src="profile.png" alt="">
-        <ul class="sci">
-            <li><a style="color: white;" href="https://www.facebook.com/devansh.bindlish"><i class="fab fa-facebook-square "></i></a>
-            </li>
-            <li><a style="color: white;" href="https://www.instagram.com/devil.704/"><i class="fab fa-instagram "></i></a>
-            </li>
-            <li><a style="color: white;" href="https://in.linkedin.com/in/devansh-bindlish-a4204116b"><i class="fab fa-linkedin "></i></a>
-            </li>
-            <li><a style="color: white;" href="https://github.com/Devansh3059"><i class="fab fa-github-square "></i></a>
-            </li>
-        </ul>
+        <div class="col-md-4">
+            <img src="profile.png" alt="">
+        </div>
+        <div class="col-md-1">
+            <ul class="social-links">
+                <li><a style="color: white;" href="https://in.linkedin.com/in/devansh-bindlish-a4204116b"><i class="fab fa-linkedin "></i></a>
+                </li>
+                <li><a style="color: white;" href="https://github.com/Devansh3059"><i class="fab fa-github-square "></i></a>
+                </li>
+                <li><a style="color: white;" href="https://www.facebook.com/devansh.bindlish"><i class="fab fa-facebook-square "></i></a>
+                </li>
+                <li><a style="color: white;" href="https://www.instagram.com/devil.704/"><i class="fab fa-instagram "></i></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 <script src="app.js"></script>

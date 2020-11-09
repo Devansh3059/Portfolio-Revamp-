@@ -1,14 +1,14 @@
 window.onload = function(){
     const navSlide = function(){
         var burgerr = document.querySelector(".burger");
-        const nav = document.querySelector(".nav-links");
-        const navLinks = document.querySelectorAll(".nav-links li");
+        const nav = document.querySelector(".nav-menu");
+        const navMenu = document.querySelectorAll(".nav-menu li");
 
         burgerr.addEventListener("click",function(){
             nav.classList.toggle("nav-active");
             // console.log("clicked")
             //link animation
-        navLinks.forEach((link,index)=>{
+        navMenu.forEach((link,index)=>{
             if(link.style.animation){
                 link.style.animation = ``;
             }

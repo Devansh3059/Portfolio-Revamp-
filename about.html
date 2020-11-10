@@ -6,13 +6,14 @@
     <title>About.html</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div id="logo">
             <h4>WELCOME</h4>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Work</a></li>
@@ -25,5 +26,35 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <div class="container">
+        <h2>Dynamic Tabs</h2>
+        <ul class="head-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+          <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+        </ul>
+      
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p></p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p></p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p></p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>

@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Nav Bar
     </title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="public/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
 </head>
-<body>
-    <nav class="navbar">
+<body style="background: #010615;">
+    <nav class="custom-navbar">
         <div id="logo">
             <h4>WELCOME</h4>
         </div>
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Certificates</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -42,7 +41,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <img src="profile.png" alt="">
+            <img src="public/img/profile.png" alt="">
         </div>
         <div class="col-md-1">
             <ul class="social-links">
@@ -57,6 +56,62 @@
             </ul>
         </div>
     </div>
+    <div class="aboutme-container" id="aboutme">
+        <h1>About Me</h1>
+        <p>I am full stack Web Developer and a Machine Learning and Deep Learning enthusiast.
+            Also I have gained good amount of experience in machine learning and web development as well.
+            Currently working on my deep learning skills and knowledge.
+        </p>
+        <div class="skills-section">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>NodeJs</p>
+            <p>MongoDb</p>
+            <p>BootStrap</p>
+            <p>Machine Learning</p>
+            <p>Deep Learning</p>
+        </div>
+    </div>
+    <div class="work-ex-section" id="work">
+
+    </div>
+    <div class="row certificates">
+        <div class="certi-box">
+            <div class="certi-img">
+                <img src="public/img/model.jpg" alt="">
+            </div>
+            <div class="course">
+                <h2>Machine Learning
+                    <br>
+                    <span>Basic Course</span>
+                </h2>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="certi-img">
+                <img src="public/img/model.jpg" alt="">
+            </div>
+            <div class="course">
+                <h2>Machine Learning
+                    <br>
+                    <span>Basic Course</span>
+                </h2>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="certi-img">
+                <img src="public/img/model.jpg" alt="">
+            </div>
+            <div class="course">
+                <h2>Machine Learning
+                    <br>
+                    <span>Basic Course</span>
+                </h2>
+            </div>
+        </div>
+        
+    </div>
 </body>
-<script src="app.js"></script>
+<script src="public/js/app.js"></script>
 </html>
